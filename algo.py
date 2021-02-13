@@ -70,8 +70,7 @@ def append(ticker):
 
     # new lines is used here to make the whole series of data in an well arranged order to be used by the algorithms
     new_lines = new_lines[::-1]
-    csv_file = open("/home/ubuntu/environment/final_project/" +
-                    ticker + ".csv", "a")  # opening the file to append data
+    csv_file = open("C:/Users/docsa/OneDrive/Desktop/stock-trading" + ticker + ".csv", "a")  # opening the file to append data
     csv_file.writelines(new_lines)  # appending new data
     csv_file.close()
 
@@ -428,7 +427,6 @@ def results():
 
     json_file.close
     # after writing the details inside the file, it needs to be closed
-
 
 # The program runs from here
 results()
